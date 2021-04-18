@@ -148,7 +148,6 @@ function getSelectedText() {
  */
 function insertText(newText) {
   var selection = DocumentApp.getActiveDocument().getSelection();
-  var parts = newText.split("\n");
   if (selection) {
     var replaced = false;
     var elements = selection.getSelectedElements();
